@@ -10,11 +10,14 @@
  * }  
  * 
  * 
-    output => ["bar","qux","octo","foobar"]   
+   output => ["bar","qux","octo","foobar"]   
  */
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 
+for (let i = 1; i < arr.length; i += 2) {
+   result.push(arr[i]);
+}
 
 //export result
 module.exports = result;
